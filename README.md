@@ -21,3 +21,5 @@ cheat sheet to html character, click edit to see what code to use
 
 &#63; ?
 
+<a href="http://www.ascii.cl/htmlcodes.htm">Link to more characters</a> 
+
