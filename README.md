@@ -1,7 +1,7 @@
 html-character-
 ===============
 
-cheat sheet to html character
+cheat sheet to html character, click edit to see what code to use
 
 &#92; /
 
