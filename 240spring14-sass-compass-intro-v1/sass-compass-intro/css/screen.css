@@ -1,4 +1,4 @@
-                                                                                                                                               /*! 
+                                                                                                                                               /* 
 This is the main stylesheet file. To keep things easier to read we don't actually write any css here. Instead we import a bunch of other partial files.
 In Sass a partial has the following properties:
 
@@ -94,6 +94,11 @@ body {
   font-size: 100%;
   line-height: 1.5;
   font-family: sans-serif;
+}
+
+/* line 28, ../scss/_global.scss */
+p {
+  margin: 1em;
 }
 
 @media only screen and (min-width: 20.0625em) {
