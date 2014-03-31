@@ -88,19 +88,165 @@ img, video {
   height: auto;
 }
 
+/* header, body, and p */
 /* line 21, ../scss/_global.scss */
-body {
-  width: 98%;
-  font-size: 100%;
-  line-height: 1.5;
-  font-family: sans-serif;
+h1 {
+  text-align: center;
+  color: #60F;
+  font-size: 3em;
+  padding-top: 10px;
 }
 
 /* line 28, ../scss/_global.scss */
-p {
-  margin: 1em;
+h2 {
+  color: #60F;
+  text-align: center;
+  font-size: 2.5em;
 }
 
+/* line 35, ../scss/_global.scss */
+body, p {
+  text-align: left;
+  font-size: 100%;
+  line-height: 1.3;
+  font-family: sans-serif;
+}
+
+/* line 42, ../scss/_global.scss */
+body {
+  background-color: #FFFFEB;
+}
+
+/* line 46, ../scss/_global.scss */
+h3 {
+  color: #069;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  line-height: 2.0;
+}
+
+/* line 54, ../scss/_global.scss */
+h4 {
+  color: #C60;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 61, ../scss/_global.scss */
+h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #006;
+}
+
+/* line 69, ../scss/_global.scss */
+header {
+  height: 150px;
+  border: 2px dotted #FFFFCC;
+}
+
+/* line 74, ../scss/_global.scss */
+footer {
+  color: #C60;
+}
+
+/* line 78, ../scss/_global.scss */
+p.presenter {
+  font-style: italic;
+  color: #960;
+}
+
+/* end of body */
+/* nav and links */
+/* line 2, ../scss/_navigation.scss */
+#nav {
+  display: inline;
+  text-align: left;
+  clear: both;
+}
+
+/* line 9, ../scss/_navigation.scss */
+#nav ul {
+  overflow: hidden;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* line 16, ../scss/_navigation.scss */
+#nav li {
+  display: block;
+  line-height: 1em;
+  text-decoration: none;
+}
+
+/* line 22, ../scss/_navigation.scss */
+li a {
+  float: left;
+  border-bottom: 1px solid #eee;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  color: #039;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  font-weight: 900;
+  padding: 0.625em;
+}
+
+/* line 37, ../scss/_navigation.scss */
+#nav li a:hover {
+  color: #F93;
+}
+
+/* line 42, ../scss/_navigation.scss */
+#active a {
+  display: inline;
+  color: #F00;
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_navigation.scss */
+a:link {
+  color: #66ffb3;
+}
+
+/* line 52, ../scss/_navigation.scss */
+a:visited {
+  color: #00C;
+}
+
+/* line 56, ../scss/_navigation.scss */
+a {
+  text-decoration: none;
+}
+
+/* end of nav and links */
+/* menu button */
+/* line 65, ../scss/_navigation.scss */
+.menu a {
+  padding: 0.5em 0.625em;
+  /*10/16 */
+  background-color: #555;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 73, ../scss/_navigation.scss */
+.menu a:hover {
+  color: #555;
+  background-color: #f90;
+}
+
+/* line 78, ../scss/_navigation.scss */
+.menu {
+  margin-bottom: 1em;
+}
+
+/* end of menu */
 @media only screen and (min-width: 20.0625em) {
   /* line 3, ../scss/pages/_index.scss */
   .features {
@@ -136,3 +282,179 @@ p {
 .tracks .track:last-of-type {
   float: right;
 }
+
+/*main content */
+/* line 2, ../scss/pages/_schedule.scss */
+.ant {
+  background-color: #99CCFF;
+  border: 1px solid green;
+}
+
+/* line 9, ../scss/pages/_schedule.scss */
+.bee {
+  background-color: #A8D1E5;
+  border: 1px solid green;
+}
+
+/* line 14, ../scss/pages/_schedule.scss */
+.croc {
+  background-color: #F0FFFF;
+  border: 1px solid green;
+}
+
+/* line 21, ../scss/pages/_schedule.scss */
+.dog {
+  background-color: #CCFFFF;
+  border: 1px solid green;
+}
+
+/* end of main content */
+/* line 27, ../scss/pages/_schedule.scss */
+.session, .video, .speak, .block, .sch {
+  width: 100%;
+  padding: 20%;
+  margin: 5px auto;
+  padding: 2px 8px;
+  /*postion:relative;*/
+}
+
+/*main content */
+/* line 2, ../scss/pages/_speakers.scss */
+.ant {
+  background-color: #99CCFF;
+  border: 1px solid green;
+}
+
+/* line 9, ../scss/pages/_speakers.scss */
+.bee {
+  background-color: #A8D1E5;
+  border: 1px solid green;
+}
+
+/* line 14, ../scss/pages/_speakers.scss */
+.croc {
+  background-color: #F0FFFF;
+  border: 1px solid green;
+}
+
+/* line 21, ../scss/pages/_speakers.scss */
+.dog {
+  background-color: #CCFFFF;
+  border: 1px solid green;
+}
+
+/* end of main content */
+/* line 27, ../scss/pages/_speakers.scss */
+.session, .video, .speak, .block, .sch {
+  width: 100%;
+  padding: 20%;
+  margin: 5px auto;
+  padding: 2px 8px;
+  /*postion:relative;*/
+}
+
+/* line 1, ../scss/pages/_about.scss */
+.session, .video, .speak, .block, .sch {
+  width: 100%;
+  padding: 20%;
+  margin: 5px auto;
+  padding: 2px 8px;
+  /*postion:relative;*/
+}
+
+/*main content */
+/* line 10, ../scss/pages/_about.scss */
+.ant {
+  background-color: #99CCFF;
+  border: 1px solid green;
+}
+
+/* line 17, ../scss/pages/_about.scss */
+.bee {
+  background-color: #A8D1E5;
+  border: 1px solid green;
+}
+
+/* line 22, ../scss/pages/_about.scss */
+.croc {
+  background-color: #F0FFFF;
+  border: 1px solid green;
+}
+
+/* line 29, ../scss/pages/_about.scss */
+.dog {
+  background-color: #CCFFFF;
+  border: 1px solid green;
+}
+
+/* end of main content */
+/*main content */
+/* line 2, ../scss/pages/_sessions.scss */
+.ant {
+  background-color: #99CCFF;
+  border: 1px solid green;
+}
+
+/* line 9, ../scss/pages/_sessions.scss */
+.bee {
+  background-color: #A8D1E5;
+  border: 1px solid green;
+}
+
+/* line 14, ../scss/pages/_sessions.scss */
+.croc {
+  background-color: #F0FFFF;
+  border: 1px solid green;
+}
+
+/* line 21, ../scss/pages/_sessions.scss */
+.dog {
+  background-color: #CCFFFF;
+  border: 1px solid green;
+}
+
+/* end of main content */
+/* line 27, ../scss/pages/_sessions.scss */
+.session, .video, .speak, .block, .sch {
+  width: 100%;
+  padding: 20%;
+  margin: 5px auto;
+  padding: 2px 8px;
+  /*postion:relative;*/
+}
+
+/* line 1, ../scss/pages/_video.scss */
+.session, .video, .speak, .block, .sch {
+  width: 100%;
+  padding: 20%;
+  margin: 5px auto;
+  padding: 2px 8px;
+  /*postion:relative;*/
+}
+
+/*main content */
+/* line 10, ../scss/pages/_video.scss */
+.ant {
+  background-color: #99CCFF;
+  border: 1px solid green;
+}
+
+/* line 17, ../scss/pages/_video.scss */
+.bee {
+  background-color: #A8D1E5;
+  border: 1px solid green;
+}
+
+/* line 22, ../scss/pages/_video.scss */
+.croc {
+  background-color: #F0FFFF;
+  border: 1px solid green;
+}
+
+/* line 29, ../scss/pages/_video.scss */
+.dog {
+  background-color: #CCFFFF;
+  border: 1px solid green;
+}
+
+/* end of main content */
