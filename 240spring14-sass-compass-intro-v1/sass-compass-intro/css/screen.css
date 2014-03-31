@@ -1,0 +1,133 @@
+                                                                                                                                               /*! 
+This is the main stylesheet file. To keep things easier to read we don't actually write any css here. Instead we import a bunch of other partial files.
+In Sass a partial has the following properties:
+
+- it starts with an underscore _
+- it is not automatically processed, you have to @import it
+- if it ends with .scss then you can write normal css or write sass or a combination
+
+Also, FYI, this is an example of a comment that won't get erased or compressed when Sass creates the CSS file. Putting the ! after the opening /* tells Sass not to touch it.
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../scss/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../scss/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* apply a natural box layout model to all elements */
+/* line 5, ../scss/_global.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* This is not the only thing you should do for responsive images, but it is a start. Remember that this style will not make your image or video grow any bigger than the original so you have to put in the largest version you will need.
+That can be a performance issue since small screens will download the same image as large ones.
+This article by Luke Wroblewski goes into more detail about that: http://www.lukew.com/ff/entry.asp?1851
+*/
+/* line 13, ../scss/_global.scss */
+img, video {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 21, ../scss/_global.scss */
+body {
+  width: 98%;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+@media only screen and (min-width: 20.0625em) {
+  /* line 3, ../scss/pages/_index.scss */
+  .features {
+    width: 98%;
+  }
+}
+@media only screen and (min-width: 30.0625em) {
+  /* line 3, ../scss/pages/_index.scss */
+  .features {
+    width: 96%;
+  }
+}
+@media only screen and (min-width: 45em) {
+  /* line 3, ../scss/pages/_index.scss */
+  .features {
+    width: 94%;
+  }
+}
+
+/* line 21, ../scss/pages/_index.scss */
+.tracks {
+  clear: both;
+  margin: 0 0;
+  overflow: hidden;
+}
+/* line 24, ../scss/pages/_index.scss */
+.tracks .track {
+  width: 25%;
+  padding: 0 1%;
+  float: left;
+}
+/* line 17, ../scss/_mixins.scss */
+.tracks .track:last-of-type {
+  float: right;
+}

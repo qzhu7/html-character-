@@ -1,0 +1,27 @@
+
+//This is just an example of using breakpoints. Please change or remove
+.features{
+	@include breakpoint(x-small){
+		width:98%;
+	}
+
+	@include breakpoint(small){
+		width: 96%;
+	}
+
+	@include breakpoint(medium){
+		width:94%;
+	}
+}
+
+
+//this is also just an example of how to add columns
+//it makes each track 1 of four columns (25%) wide.
+
+.tracks{
+	@include set-row;
+
+	.track{
+		@include col(1,4);
+	}
+}

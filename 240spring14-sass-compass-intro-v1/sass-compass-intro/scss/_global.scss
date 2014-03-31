@@ -1,0 +1,26 @@
+//Some Responsive styles
+
+//border-box model
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+/* This is not the only thing you should do for responsive images, but it is a start. Remember that this style will not make your image or video grow any bigger than the original so you have to put in the largest version you will need.
+That can be a performance issue since small screens will download the same image as large ones.
+This article by Luke Wroblewski goes into more detail about that: http://www.lukew.com/ff/entry.asp?1851
+*/
+img,video{
+  width: auto; 
+  max-width: 100%; 
+  height: auto;
+}
+
+
+
+body{
+	width:98%;
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
